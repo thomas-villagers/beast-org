@@ -37,8 +37,8 @@ This graph captures a set
 
 I also go running once in a while. Graph the results:
 
-#+NAME: rungraphR :var table=""
-#+BEGIN_SRC R :exports results :results output graphics :file img/rungraph-r.png :width 400 :height 400 :var table=runtable 
+#+NAME: rungraphR 
+#+BEGIN_SRC R  :var table=""
  library(zoo)
  library(ggplot2)
  setClass("myTime")

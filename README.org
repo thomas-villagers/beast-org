@@ -4,7 +4,7 @@
 
 Capture [[http://www.beachbody.com/product/fitness_programs/body-beast-workout.do][Body Beast]] workout results and create statistics 
 
-see [[file:example.html][example]]
+see [[file:example.html][example.html]] and [[file:example.md][example.md]]
 
 ** Capture Templates 
 
@@ -27,7 +27,7 @@ install.packages("reshape")
 ** Batch Export
 
 #+BEGIN_SRC sh
-emacs -l init.el training.org --batch -f org-html-export-to-html --kill
+emacs -l init.el example.org --batch -f org-html-export-to-html --kill
 #+END_SRC
 
 

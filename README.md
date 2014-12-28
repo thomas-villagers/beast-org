@@ -19,7 +19,7 @@
 
 Capture [Body Beast](http://www.beachbody.com/product/fitness_programs/body-beast-workout.do) workout results and create statistics 
 
-see [example](example.html)
+see [example.html](example.html) and [example.md](example.md)
 
 ## Capture Templates<a id="sec-1-1" name="sec-1-1"></a>
 
@@ -39,4 +39,4 @@ R needs zoo, ggplot2 and reshape2
 
 ## Batch Export<a id="sec-1-4" name="sec-1-4"></a>
 
-    emacs -l init.el training.org --batch -f org-html-export-to-html --kill
+    emacs -l init.el example.org --batch -f org-html-export-to-html --kill
