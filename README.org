@@ -4,11 +4,13 @@
 
 Capture [[http://www.beachbody.com/product/fitness_programs/body-beast-workout.do][Body Beast]] workout results and create graphs
 
-See [[file:statistics.org][statistics.org]], [[file:statistics.md][statistics.md]], [[file:statistics.html][statistics.html]]
+See [[file:statistics.org][statistics.org]] (plain org file) , [[file:statistics.md][statistics.md]] (markdown with graphics), [[file:statistics.html][statistics.html]] (styled with [[https://github.com/fniessen/org-html-themes][org-html-themes]])
 
 ** Capture Templates 
 
-Workouts are captured in file =beast-org-file= ([[file:example-workouts.org][example-workouts.org]])
+[[file:statistics.org][statistics.org]] defines a couple of Capture Templates for the Bulk Phase. 
+
+Workouts are captured in file =beast-org-file= ([[file:workouts-example.org][workouts-example.org]])
 
 ** Emacs-Lisp
 
@@ -34,9 +36,11 @@ emacs -l init.el statistics.org --batch -f org-html-export-to-html --kill
 
 *** Markdown 
 
+Needs ox-md: =(require 'ox-md)= 
+
 #+BEGIN_SRC sh
 emacs -l init.el statistics.org --batch -f org-md-export-as-markdown --kill
 #+END_SRC
 
-Needs ox-md: =(require 'ox-md)= 
+
 
