@@ -2,13 +2,13 @@
 
 * Body Beast meets Org-Mode
 
-Capture [[http://www.beachbody.com/product/fitness_programs/body-beast-workout.do][Body Beast]] workout results and create statistics 
+Capture [[http://www.beachbody.com/product/fitness_programs/body-beast-workout.do][Body Beast]] workout results and create graphs
 
-see [[file:example.html][example.html]] and [[file:example.md][example.md]]
+See [[file:statistics.org][statistics.org]], [[file:statistics.md][statistics.md]], [[file:statistics.html][statistics.html]]
 
 ** Capture Templates 
 
-see [[file:example.org][example.org]]
+Workouts are captured in file =beast-org-file= ([[file:example-workouts.org][example-workouts.org]])
 
 ** Emacs-Lisp
 
@@ -27,7 +27,7 @@ install.packages("reshape")
 ** Batch Export
 
 #+BEGIN_SRC sh
-emacs -l init.el example.org --batch -f org-html-export-to-html --kill
+emacs -l init.el statistics.org --batch -f org-html-export-to-html --kill
 #+END_SRC
 
 

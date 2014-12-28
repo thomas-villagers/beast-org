@@ -28,7 +28,7 @@
     (puthash "progressiveset" '("Date" "15 Reps" "12 Reps" "8 Reps" "8 Reps" "12 Reps" "15 Reps") sethash)
     (setq mylist (list (gethash set sethash)))
     (push 'hline mylist)
-    (org-map-entries 'table-func workout)
+    (org-map-entries 'table-func workout (list beast-org-file))
     (reverse mylist)))
 
 (defun get-time ()
@@ -39,6 +39,6 @@
 
 (defun run-table ()
   (let ((the-list '(hline ("Date" "Time"))))
-    (org-map-entries 'process-run-entry "+running")
+    (org-map-entries 'process-run-entry "+running" (list beast-org-file))
     (reverse the-list)))
 
