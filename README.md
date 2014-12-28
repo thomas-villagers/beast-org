@@ -1,62 +1,42 @@
-			      ━━━━━━━━━━━
-			       BEAST-ORG
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Body Beast meets Org-Mode</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Capture Templates</a></li>
+<li><a href="#sec-1-2">1.2. Emacs-Lisp</a></li>
+<li><a href="#sec-1-3">1.3. R</a></li>
+<li><a href="#sec-1-4">1.4. Batch Export</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 
 
-				 thomas
-			      ━━━━━━━━━━━
+# Body Beast meets Org-Mode<a id="sec-1" name="sec-1"></a>
 
+Capture [Body Beast](http://www.beachbody.com/product/fitness_programs/body-beast-workout.do) workout results and statistics 
 
-Table of Contents
-─────────────────
+see [example](training.html)
 
-1 Body Beast meets Org-Mode
-.. 1.1 Capture Templates
-.. 1.2 Emacs-Lisp
-.. 1.3 R
-.. 1.4 Batch Export
+## Capture Templates<a id="sec-1-1" name="sec-1-1"></a>
 
-1 Body Beast meets Org-Mode
-═══════════════════════════
+## Emacs-Lisp<a id="sec-1-2" name="sec-1-2"></a>
 
-  Capture [Body Beast] workout results and statistics
+see [beast-org.el](src/beast-org.el)
 
-  see [example]
+## R<a id="sec-1-3" name="sec-1-3"></a>
 
+R needs zoo, ggplot2 and reshape2
 
-  [Body Beast]
-  http://www.beachbody.com/product/fitness_programs/body-beast-workout.do
+    install.packages("zoo")
+    install.packages("ggplot2")
+    install.packages("reshape")
 
-  [example] file:training.html
+## Batch Export<a id="sec-1-4" name="sec-1-4"></a>
 
+    emacs -l init.el training.org --batch -f org-html-export-to-html --kill
 
-1.1 Capture Templates
-─────────────────────
-
-
-1.2 Emacs-Lisp
-──────────────
-
-  see [beast-org.el]
-
-
-  [beast-org.el] file:src/beast-org.el
-
-
-1.3 R
-─────
-
-  R needs zoo, ggplot2 and reshape2
-
-  ┌────
-  │ install.packages("zoo")
-  │ install.packages("ggplot2")
-  │ install.packages("reshape")
-  └────
-
-
-1.4 Batch Export
-────────────────
-
-  ┌────
-  │ emacs -l init.el training.org --batch -f org-html-export-to-html --kill
-  └────
+(require &lsquo;ox-md)
