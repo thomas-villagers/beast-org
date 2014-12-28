@@ -6,15 +6,17 @@
 * Capture Templates
 
 #+BEGIN_SRC emacs-lisp
-  (setq org-capture-templates
-        '(("w" "workout" entry (file+datetree "training.org") "* %?\ņ")
-          ("e" "beast abs" entry (file+datetree "training.org") "* Beast Abs :bodybeast:beast:abs: \n %?")
-          ("c" "bulk chest" entry (file+datetree "training.org") "%[capturetemplates/bulkchest.org]")
-          ("l" "bulk legs" entry (file+datetree "training.org") "%[capturetemplates/bulklegs.org]")
-          ("a" "bulk arms" entry (file+datetree "training.org") "%[capturetemplates/bulkarms.org]")
-          ("b" "bulk back" entry (file+datetree "training.org") "%[capturetemplates/bulkback.org]")
-          ("s" "bulk shoulders" entry (file+datetree "training.org") "%[capturetemplates/bulkshoulders.org]")
-          ("r" "running" entry (file+datetree "training.org") "* Running :running: \n SCHEDULED: %t\n %^{Time}p")))
+(setq beast-org-file "example.org")
+
+(setq org-capture-templates
+      '(("w" "workout" entry (file+datetree beast-org-file) "* %?\ņ")
+        ("e" "beast abs" entry (file+datetree beast-org-file) "* Beast Abs :bodybeast:beast:abs: \n %?")
+        ("c" "bulk chest" entry (file+datetree beast-org-file) "%[capturetemplates/bulkchest.org]")
+        ("l" "bulk legs" entry (file+datetree beast-org-file) "%[capturetemplates/bulklegs.org]")
+        ("a" "bulk arms" entry (file+datetree beast-org-file) "%[capturetemplates/bulkarms.org]")
+        ("b" "bulk back" entry (file+datetree beast-org-file) "%[capturetemplates/bulkback.org]")
+        ("s" "bulk shoulders" entry (file+datetree beast-org-file) "%[capturetemplates/bulkshoulders.org]")
+        ("r" "running" entry (file+datetree beast-org-file) "* Running :running: \n SCHEDULED: %t\n %^{Time}p")))
 #+END_SRC
 * Programming
 
@@ -710,7 +712,6 @@ SCHEDULED: <2014-12-27 Sa>
 
 
 **** Beast Abs						:bodybeast:beast:abs:
-   
 * Statistics
 
 ** Bulk Chest 
