@@ -39,6 +39,6 @@
 
 (defun run-table ()
   (let ((the-list '(hline ("Date" "Time"))))
-    (org-map-entries 'process-run-entry "+laufen")
+    (org-map-entries 'process-run-entry "+running")
     (reverse the-list)))
 
