@@ -24,11 +24,13 @@
 
 Capture [Body Beast](http://www.beachbody.com/product/fitness_programs/body-beast-workout.do) workout results and create graphs
 
-See [statistics.org](statistics.md), [statistics.md](statistics.md), [statistics.html](statistics.html)
+See [statistics.org](statistics.md) (plain org file) , [statistics.md](statistics.md) (markdown with graphics), [statistics.html](statistics.html) (styled with [org-html-themes](https://github.com/fniessen/org-html-themes))
 
 ## Capture Templates<a id="sec-1-1" name="sec-1-1"></a>
 
-Workouts are captured in file `beast-org-file` ([example-workouts.org](example-workouts.md))
+[statistics.org](statistics.md) defines a couple of Capture Templates for the Bulk Phase. 
+
+Workouts are captured in file `beast-org-file` ([workouts-example.org](workouts-example.md))
 
 ## Emacs-Lisp<a id="sec-1-2" name="sec-1-2"></a>
 
@@ -50,6 +52,6 @@ R needs zoo, ggplot2 and reshape2
 
 ### Markdown<a id="sec-1-4-2" name="sec-1-4-2"></a>
 
-    emacs -l init.el statistics.org --batch -f org-md-export-as-markdown --kill
+Needs ox-md: `(require 'ox-md)` 
 
-Needs ox-md: `(require 'ox-md)`
+    emacs -l init.el statistics.org --batch -f org-md-export-as-markdown --kill
