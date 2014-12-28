@@ -1,0 +1,34 @@
+#+TITLE: beast-org
+
+* Body Beast meets Org-Mode
+
+Capture [[http://www.beachbody.com/product/fitness_programs/body-beast-workout.do][Body Beast]] workout results and create statistics 
+
+see [[file:example.html][example]]
+
+** Capture Templates 
+
+see [[file:example.org][example.org]]
+
+** Emacs-Lisp
+
+see [[file:src/beast-org.el][beast-org.el]]
+
+** R 
+
+R needs zoo, ggplot2 and reshape2
+
+#+BEGIN_SRC R
+install.packages("zoo")
+install.packages("ggplot2")
+install.packages("reshape")
+#+END_SRC
+
+** Batch Export
+
+#+BEGIN_SRC sh
+emacs -l init.el training.org --batch -f org-html-export-to-html --kill
+#+END_SRC
+
+
+

@@ -19,9 +19,11 @@
 
 Capture [Body Beast](http://www.beachbody.com/product/fitness_programs/body-beast-workout.do) workout results and create statistics 
 
-see example
+see [example](example.html)
 
 ## Capture Templates<a id="sec-1-1" name="sec-1-1"></a>
+
+see [example.org](example.md)
 
 ## Emacs-Lisp<a id="sec-1-2" name="sec-1-2"></a>
 
