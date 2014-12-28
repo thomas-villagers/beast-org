@@ -17,13 +17,13 @@
 
 # Body Beast meets Org-Mode<a id="sec-1" name="sec-1"></a>
 
-Capture [Body Beast](http://www.beachbody.com/product/fitness_programs/body-beast-workout.do) workout results and create statistics 
+Capture [Body Beast](http://www.beachbody.com/product/fitness_programs/body-beast-workout.do) workout results and create graphs
 
-see [example.html](example.html) and [example.md](example.md)
+See [statistics.org](statistics.md), [statistics.md](statistics.md), [statistics.html](statistics.html)
 
 ## Capture Templates<a id="sec-1-1" name="sec-1-1"></a>
 
-see [[<example.org][example.md>]
+Workouts are captured in file `beast-org-file` ([example-workouts.org](example-workouts.md))
 
 ## Emacs-Lisp<a id="sec-1-2" name="sec-1-2"></a>
 
