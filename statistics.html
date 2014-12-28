@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Statistics</title>
-<!-- 2014-12-28 So 15:43 -->
+<!-- 2014-12-28 So 16:04 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="thomas" />
@@ -154,82 +154,86 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Capture Templates</a></li>
-<li><a href="#sec-2">2. Programming</a>
+<li><a href="#sec-1">1. Programming</a>
 <ul>
-<li><a href="#sec-2-1">2.1. R</a>
+<li><a href="#sec-1-1">1.1. Setup</a></li>
+<li><a href="#sec-1-2">1.2. Capture Templates</a></li>
+<li><a href="#sec-1-3">1.3. Emacs Lisp</a></li>
+<li><a href="#sec-1-4">1.4. R</a>
 <ul>
-<li><a href="#sec-2-1-1">2.1.1. Simple R Graph</a></li>
-<li><a href="#sec-2-1-2">2.1.2. R Graph with <code>MM:SS</code> at y-axis</a></li>
-</ul>
-</li>
-<li><a href="#sec-2-2">2.2. Emacs Lisp</a></li>
-</ul>
-</li>
-<li><a href="#sec-3">3. Statistics</a>
-<ul>
-<li><a href="#sec-3-1">3.1. Bulk Chest</a>
-<ul>
-<li><a href="#sec-3-1-1">3.1.1. Incline Fly</a></li>
-<li><a href="#sec-3-1-2">3.1.2. Incline Press</a></li>
-<li><a href="#sec-3-1-3">3.1.3. Chest Press with Rotation</a></li>
-<li><a href="#sec-3-1-4">3.1.4. Progressive Incline Press</a></li>
-<li><a href="#sec-3-1-5">3.1.5. Close Grip Press to Fly</a></li>
-</ul>
-</li>
-<li><a href="#sec-3-2">3.2. Bulk Legs</a>
-<ul>
-<li><a href="#sec-3-2-1">3.2.1. Front to back Lunge</a></li>
-<li><a href="#sec-3-2-2">3.2.2. Squat</a></li>
-<li><a href="#sec-3-2-3">3.2.3. Full to 1/2 Sumo Squat</a></li>
-<li><a href="#sec-3-2-4">3.2.4. Split Squat w/EZ Bar</a></li>
-<li><a href="#sec-3-2-5">3.2.5. Stiff Leg Deadlift</a></li>
-<li><a href="#sec-3-2-6">3.2.6. Alt. Side Squat</a></li>
-<li><a href="#sec-3-2-7">3.2.7. Calf Raise</a></li>
-</ul>
-</li>
-<li><a href="#sec-3-3">3.3. Bulk Back</a>
-<ul>
-<li><a href="#sec-3-3-1">3.3.1. Pull-Over</a></li>
-<li><a href="#sec-3-3-2">3.3.2. Reverse Grip Row</a></li>
-<li><a href="#sec-3-3-3">3.3.3. One Arm Row</a></li>
-<li><a href="#sec-3-3-4">3.3.4. Deadlift</a></li>
-<li><a href="#sec-3-3-5">3.3.5. Reverse Fly</a></li>
-<li><a href="#sec-3-3-6">3.3.6. Plank Rotation</a></li>
-</ul>
-</li>
-<li><a href="#sec-3-4">3.4. Bulk Arms</a>
-<ul>
-<li><a href="#sec-3-4-1">3.4.1. Standing Curl</a></li>
-<li><a href="#sec-3-4-2">3.4.2. Tricep Extension</a></li>
-<li><a href="#sec-3-4-3">3.4.3. Wide EZ Bar Curl</a></li>
-<li><a href="#sec-3-4-4">3.4.4. Skull Crusher</a></li>
-<li><a href="#sec-3-4-5">3.4.5. Hammer Curl</a></li>
-<li><a href="#sec-3-4-6">3.4.6. Tricep Kickback</a></li>
-<li><a href="#sec-3-4-7">3.4.7. Weighted Crunch</a></li>
-</ul>
-</li>
-<li><a href="#sec-3-5">3.5. Bulk Shoulders</a>
-<ul>
-<li><a href="#sec-3-5-1">3.5.1. Lateral Raise</a></li>
-<li><a href="#sec-3-5-2">3.5.2. Arnold Press</a></li>
-<li><a href="#sec-3-5-3">3.5.3. Upright Row</a></li>
-<li><a href="#sec-3-5-4">3.5.4. Alt. Front Raise</a></li>
-<li><a href="#sec-3-5-5">3.5.5. Plate Twist-Twist</a></li>
-<li><a href="#sec-3-5-6">3.5.6. Reverse Fly</a></li>
-<li><a href="#sec-3-5-7">3.5.7. Plank Twist-Twist</a></li>
+<li><a href="#sec-1-4-1">1.4.1. Simple R Graph</a></li>
+<li><a href="#sec-1-4-2">1.4.2. R Graph with <code>MM:SS</code> at y-axis</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#sec-4">4. Running</a></li>
+<li><a href="#sec-2">2. Statistics</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Bulk Chest</a>
+<ul>
+<li><a href="#sec-2-1-1">2.1.1. Incline Fly</a></li>
+<li><a href="#sec-2-1-2">2.1.2. Incline Press</a></li>
+<li><a href="#sec-2-1-3">2.1.3. Chest Press with Rotation</a></li>
+<li><a href="#sec-2-1-4">2.1.4. Progressive Incline Press</a></li>
+<li><a href="#sec-2-1-5">2.1.5. Close Grip Press to Fly</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-2">2.2. Bulk Legs</a>
+<ul>
+<li><a href="#sec-2-2-1">2.2.1. Front to back Lunge</a></li>
+<li><a href="#sec-2-2-2">2.2.2. Squat</a></li>
+<li><a href="#sec-2-2-3">2.2.3. Full to 1/2 Sumo Squat</a></li>
+<li><a href="#sec-2-2-4">2.2.4. Split Squat w/EZ Bar</a></li>
+<li><a href="#sec-2-2-5">2.2.5. Stiff Leg Deadlift</a></li>
+<li><a href="#sec-2-2-6">2.2.6. Alt. Side Squat</a></li>
+<li><a href="#sec-2-2-7">2.2.7. Calf Raise</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-3">2.3. Bulk Back</a>
+<ul>
+<li><a href="#sec-2-3-1">2.3.1. Pull-Over</a></li>
+<li><a href="#sec-2-3-2">2.3.2. Reverse Grip Row</a></li>
+<li><a href="#sec-2-3-3">2.3.3. One Arm Row</a></li>
+<li><a href="#sec-2-3-4">2.3.4. Deadlift</a></li>
+<li><a href="#sec-2-3-5">2.3.5. Reverse Fly</a></li>
+<li><a href="#sec-2-3-6">2.3.6. Plank Rotation</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-4">2.4. Bulk Arms</a>
+<ul>
+<li><a href="#sec-2-4-1">2.4.1. Standing Curl</a></li>
+<li><a href="#sec-2-4-2">2.4.2. Tricep Extension</a></li>
+<li><a href="#sec-2-4-3">2.4.3. Wide EZ Bar Curl</a></li>
+<li><a href="#sec-2-4-4">2.4.4. Skull Crusher</a></li>
+<li><a href="#sec-2-4-5">2.4.5. Hammer Curl</a></li>
+<li><a href="#sec-2-4-6">2.4.6. Tricep Kickback</a></li>
+<li><a href="#sec-2-4-7">2.4.7. Weighted Crunch</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-5">2.5. Bulk Shoulders</a>
+<ul>
+<li><a href="#sec-2-5-1">2.5.1. Lateral Raise</a></li>
+<li><a href="#sec-2-5-2">2.5.2. Arnold Press</a></li>
+<li><a href="#sec-2-5-3">2.5.3. Upright Row</a></li>
+<li><a href="#sec-2-5-4">2.5.4. Alt. Front Raise</a></li>
+<li><a href="#sec-2-5-5">2.5.5. Plate Twist-Twist</a></li>
+<li><a href="#sec-2-5-6">2.5.6. Reverse Fly</a></li>
+<li><a href="#sec-2-5-7">2.5.7. Plank Twist-Twist</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-3">3. Running</a></li>
 </ul>
 </div>
 </div>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Capture Templates</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> Programming</h2>
 <div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Setup</h3>
+<div class="outline-text-3" id="text-1-1">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="initialize">(setq beast-org-file <span style="font-style: italic;">"workouts-example.org"</span>) <span style="font-weight: bold; font-style: italic;">; </span><span style="font-weight: bold; font-style: italic;">use absolute path or capture file goes to ~/org</span>
@@ -240,7 +244,12 @@ for the JavaScript code in this tag.
 <pre class="example">
 t
 </pre>
+</div>
+</div>
 
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Capture Templates</h3>
+<div class="outline-text-3" id="text-1-2">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="capture-templates">(setq org-capture-templates
@@ -257,16 +266,21 @@ t
 </div>
 </div>
 
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Emacs Lisp</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+see <a href="src/beast-org.el">beast-org.el</a>
+</p>
+</div>
+</div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Programming</h2>
-<div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> R</h3>
-<div class="outline-text-3" id="text-2-1">
-</div><div id="outline-container-sec-2-1-1" class="outline-4">
-<h4 id="sec-2-1-1"><span class="section-number-4">2.1.1</span> Simple R Graph</h4>
-<div class="outline-text-4" id="text-2-1-1">
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> R</h3>
+<div class="outline-text-3" id="text-1-4">
+</div><div id="outline-container-sec-1-4-1" class="outline-4">
+<h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> Simple R Graph</h4>
+<div class="outline-text-4" id="text-1-4-1">
 <p>
 This graph captures a set
 </p>
@@ -282,9 +296,9 @@ p
 </div>
 </div>
 
-<div id="outline-container-sec-2-1-2" class="outline-4">
-<h4 id="sec-2-1-2"><span class="section-number-4">2.1.2</span> R Graph with <code>MM:SS</code> at y-axis</h4>
-<div class="outline-text-4" id="text-2-1-2">
+<div id="outline-container-sec-1-4-2" class="outline-4">
+<h4 id="sec-1-4-2"><span class="section-number-4">1.4.2</span> R Graph with <code>MM:SS</code> at y-axis</h4>
+<div class="outline-text-4" id="text-1-4-2">
 <p>
 I also go running once in a while. Graph the results:
 </p>
@@ -303,27 +317,17 @@ q
 </div>
 </div>
 </div>
-
-
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Emacs Lisp</h3>
-<div class="outline-text-3" id="text-2-2">
-<p>
-see <a href="src/beast-org.el">beast-org.el</a>
-</p>
-</div>
-</div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Statistics</h2>
-<div class="outline-text-2" id="text-3">
-</div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Bulk Chest</h3>
-<div class="outline-text-3" id="text-3-1">
-</div><div id="outline-container-sec-3-1-1" class="outline-4">
-<h4 id="sec-3-1-1"><span class="section-number-4">3.1.1</span> Incline Fly</h4>
-<div class="outline-text-4" id="text-3-1-1">
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Statistics</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Bulk Chest</h3>
+<div class="outline-text-3" id="text-2-1">
+</div><div id="outline-container-sec-2-1-1" class="outline-4">
+<h4 id="sec-2-1-1"><span class="section-number-4">2.1.1</span> Incline Fly</h4>
+<div class="outline-text-4" id="text-2-1-1">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="inclinefly">(make-table <span style="font-style: italic;">"+bulk:chest"</span> <span style="font-style: italic;">"Incline Fly"</span> <span style="font-style: italic;">"singleset"</span>)
@@ -382,9 +386,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-1-2" class="outline-4">
-<h4 id="sec-3-1-2"><span class="section-number-4">3.1.2</span> Incline Press</h4>
-<div class="outline-text-4" id="text-3-1-2">
+<div id="outline-container-sec-2-1-2" class="outline-4">
+<h4 id="sec-2-1-2"><span class="section-number-4">2.1.2</span> Incline Press</h4>
+<div class="outline-text-4" id="text-2-1-2">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="inclinepress">(make-table <span style="font-style: italic;">"+bulk:chest"</span> <span style="font-style: italic;">"Incline Press"</span> <span style="font-style: italic;">"singleset2"</span>)
@@ -449,9 +453,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-1-3" class="outline-4">
-<h4 id="sec-3-1-3"><span class="section-number-4">3.1.3</span> Chest Press with Rotation</h4>
-<div class="outline-text-4" id="text-3-1-3">
+<div id="outline-container-sec-2-1-3" class="outline-4">
+<h4 id="sec-2-1-3"><span class="section-number-4">2.1.3</span> Chest Press with Rotation</h4>
+<div class="outline-text-4" id="text-2-1-3">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="chestpressrotation">(make-table <span style="font-style: italic;">"+bulk:chest"</span> <span style="font-style: italic;">"Chest Press with Rotation"</span> <span style="font-style: italic;">"forceset"</span>)
@@ -522,9 +526,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-1-4" class="outline-4">
-<h4 id="sec-3-1-4"><span class="section-number-4">3.1.4</span> Progressive Incline Press</h4>
-<div class="outline-text-4" id="text-3-1-4">
+<div id="outline-container-sec-2-1-4" class="outline-4">
+<h4 id="sec-2-1-4"><span class="section-number-4">2.1.4</span> Progressive Incline Press</h4>
+<div class="outline-text-4" id="text-2-1-4">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="inclinepress2">(make-table <span style="font-style: italic;">"+bulk:chest"</span> <span style="font-style: italic;">"Incline Press 2"</span> <span style="font-style: italic;">"progressiveset"</span>)
@@ -601,9 +605,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-1-5" class="outline-4">
-<h4 id="sec-3-1-5"><span class="section-number-4">3.1.5</span> Close Grip Press to Fly</h4>
-<div class="outline-text-4" id="text-3-1-5">
+<div id="outline-container-sec-2-1-5" class="outline-4">
+<h4 id="sec-2-1-5"><span class="section-number-4">2.1.5</span> Close Grip Press to Fly</h4>
+<div class="outline-text-4" id="text-2-1-5">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="closegrippresstofly">(make-table <span style="font-style: italic;">"+bulk:chest"</span> <span style="font-style: italic;">"Close Grip Press to Fly"</span> <span style="font-style: italic;">"singleset"</span>)
@@ -663,12 +667,12 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Bulk Legs</h3>
-<div class="outline-text-3" id="text-3-2">
-</div><div id="outline-container-sec-3-2-1" class="outline-4">
-<h4 id="sec-3-2-1"><span class="section-number-4">3.2.1</span> Front to back Lunge</h4>
-<div class="outline-text-4" id="text-3-2-1">
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Bulk Legs</h3>
+<div class="outline-text-3" id="text-2-2">
+</div><div id="outline-container-sec-2-2-1" class="outline-4">
+<h4 id="sec-2-2-1"><span class="section-number-4">2.2.1</span> Front to back Lunge</h4>
+<div class="outline-text-4" id="text-2-2-1">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="fronttobacklunge">(make-table <span style="font-style: italic;">"+bulk:legs"</span> <span style="font-style: italic;">"Front to Back Lunge"</span> <span style="font-style: italic;">"singleset12"</span>)
@@ -727,9 +731,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-2-2" class="outline-4">
-<h4 id="sec-3-2-2"><span class="section-number-4">3.2.2</span> Squat</h4>
-<div class="outline-text-4" id="text-3-2-2">
+<div id="outline-container-sec-2-2-2" class="outline-4">
+<h4 id="sec-2-2-2"><span class="section-number-4">2.2.2</span> Squat</h4>
+<div class="outline-text-4" id="text-2-2-2">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="squat">(make-table <span style="font-style: italic;">"+bulk:legs"</span> <span style="font-style: italic;">"Squat"</span> <span style="font-style: italic;">"progressiveset"</span>)
@@ -795,9 +799,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-2-3" class="outline-4">
-<h4 id="sec-3-2-3"><span class="section-number-4">3.2.3</span> Full to 1/2 Sumo Squat</h4>
-<div class="outline-text-4" id="text-3-2-3">
+<div id="outline-container-sec-2-2-3" class="outline-4">
+<h4 id="sec-2-2-3"><span class="section-number-4">2.2.3</span> Full to 1/2 Sumo Squat</h4>
+<div class="outline-text-4" id="text-2-2-3">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="fullto12sumosquat">(make-table <span style="font-style: italic;">"+bulk:legs"</span> <span style="font-style: italic;">"Full to 1/2 Sumo Squat"</span> <span style="font-style: italic;">"forceset"</span>)
@@ -869,9 +873,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 
 
-<div id="outline-container-sec-3-2-4" class="outline-4">
-<h4 id="sec-3-2-4"><span class="section-number-4">3.2.4</span> Split Squat w/EZ Bar</h4>
-<div class="outline-text-4" id="text-3-2-4">
+<div id="outline-container-sec-2-2-4" class="outline-4">
+<h4 id="sec-2-2-4"><span class="section-number-4">2.2.4</span> Split Squat w/EZ Bar</h4>
+<div class="outline-text-4" id="text-2-2-4">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="splitsquatwezbar">(make-table <span style="font-style: italic;">"+bulk:legs"</span> <span style="font-style: italic;">"Split Squat w/EZ Bar"</span> <span style="font-style: italic;">"progressiveset"</span>)
@@ -950,9 +954,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 
 
 
-<div id="outline-container-sec-3-2-5" class="outline-4">
-<h4 id="sec-3-2-5"><span class="section-number-4">3.2.5</span> Stiff Leg Deadlift</h4>
-<div class="outline-text-4" id="text-3-2-5">
+<div id="outline-container-sec-2-2-5" class="outline-4">
+<h4 id="sec-2-2-5"><span class="section-number-4">2.2.5</span> Stiff Leg Deadlift</h4>
+<div class="outline-text-4" id="text-2-2-5">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="stifflegdeadlift">(make-table <span style="font-style: italic;">"+bulk:legs"</span> <span style="font-style: italic;">"Stiff Leg Deadlift"</span> <span style="font-style: italic;">"singleset2"</span>)
@@ -1018,9 +1022,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 
 
-<div id="outline-container-sec-3-2-6" class="outline-4">
-<h4 id="sec-3-2-6"><span class="section-number-4">3.2.6</span> Alt. Side Squat</h4>
-<div class="outline-text-4" id="text-3-2-6">
+<div id="outline-container-sec-2-2-6" class="outline-4">
+<h4 id="sec-2-2-6"><span class="section-number-4">2.2.6</span> Alt. Side Squat</h4>
+<div class="outline-text-4" id="text-2-2-6">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="altsidesquat">(make-table <span style="font-style: italic;">"+bulk:legs"</span> <span style="font-style: italic;">"Alt. Side Squat"</span> <span style="font-style: italic;">"singleset10"</span>)
@@ -1082,9 +1086,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 
 
 
-<div id="outline-container-sec-3-2-7" class="outline-4">
-<h4 id="sec-3-2-7"><span class="section-number-4">3.2.7</span> Calf Raise</h4>
-<div class="outline-text-4" id="text-3-2-7">
+<div id="outline-container-sec-2-2-7" class="outline-4">
+<h4 id="sec-2-2-7"><span class="section-number-4">2.2.7</span> Calf Raise</h4>
+<div class="outline-text-4" id="text-2-2-7">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="calfraise">(make-table <span style="font-style: italic;">"+bulk:legs"</span> <span style="font-style: italic;">"Calf Raise"</span> <span style="font-style: italic;">"singleset50"</span>)
@@ -1138,12 +1142,12 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Bulk Back</h3>
-<div class="outline-text-3" id="text-3-3">
-</div><div id="outline-container-sec-3-3-1" class="outline-4">
-<h4 id="sec-3-3-1"><span class="section-number-4">3.3.1</span> Pull-Over</h4>
-<div class="outline-text-4" id="text-3-3-1">
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Bulk Back</h3>
+<div class="outline-text-3" id="text-2-3">
+</div><div id="outline-container-sec-2-3-1" class="outline-4">
+<h4 id="sec-2-3-1"><span class="section-number-4">2.3.1</span> Pull-Over</h4>
+<div class="outline-text-4" id="text-2-3-1">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="pullover">(make-table <span style="font-style: italic;">"+bulk:back"</span> <span style="font-style: italic;">"Pull-Over"</span> <span style="font-style: italic;">"singleset2"</span>)
@@ -1209,9 +1213,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 
 
-<div id="outline-container-sec-3-3-2" class="outline-4">
-<h4 id="sec-3-3-2"><span class="section-number-4">3.3.2</span> Reverse Grip Row</h4>
-<div class="outline-text-4" id="text-3-3-2">
+<div id="outline-container-sec-2-3-2" class="outline-4">
+<h4 id="sec-2-3-2"><span class="section-number-4">2.3.2</span> Reverse Grip Row</h4>
+<div class="outline-text-4" id="text-2-3-2">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="reversegriprow">(make-table <span style="font-style: italic;">"+bulk:back"</span> <span style="font-style: italic;">"Reverse Grip Row"</span> <span style="font-style: italic;">"progressiveset"</span>)
@@ -1289,9 +1293,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 
 
-<div id="outline-container-sec-3-3-3" class="outline-4">
-<h4 id="sec-3-3-3"><span class="section-number-4">3.3.3</span> One Arm Row</h4>
-<div class="outline-text-4" id="text-3-3-3">
+<div id="outline-container-sec-2-3-3" class="outline-4">
+<h4 id="sec-2-3-3"><span class="section-number-4">2.3.3</span> One Arm Row</h4>
+<div class="outline-text-4" id="text-2-3-3">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="onearmrow">(make-table <span style="font-style: italic;">"+bulk:back"</span> <span style="font-style: italic;">"One-Arm Row"</span> <span style="font-style: italic;">"forceset"</span>)
@@ -1363,9 +1367,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 
 
-<div id="outline-container-sec-3-3-4" class="outline-4">
-<h4 id="sec-3-3-4"><span class="section-number-4">3.3.4</span> Deadlift</h4>
-<div class="outline-text-4" id="text-3-3-4">
+<div id="outline-container-sec-2-3-4" class="outline-4">
+<h4 id="sec-2-3-4"><span class="section-number-4">2.3.4</span> Deadlift</h4>
+<div class="outline-text-4" id="text-2-3-4">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="deadlift">(make-table <span style="font-style: italic;">"+bulk:back"</span> <span style="font-style: italic;">"Deadlift"</span> <span style="font-style: italic;">"singleset2"</span>)
@@ -1430,9 +1434,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-3-5" class="outline-4">
-<h4 id="sec-3-3-5"><span class="section-number-4">3.3.5</span> Reverse Fly</h4>
-<div class="outline-text-4" id="text-3-3-5">
+<div id="outline-container-sec-2-3-5" class="outline-4">
+<h4 id="sec-2-3-5"><span class="section-number-4">2.3.5</span> Reverse Fly</h4>
+<div class="outline-text-4" id="text-2-3-5">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="reversefly">(make-table <span style="font-style: italic;">"+bulk:back"</span> <span style="font-style: italic;">"Reverse Fly"</span> <span style="font-style: italic;">"singleset15"</span>)
@@ -1485,9 +1489,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-3-6" class="outline-4">
-<h4 id="sec-3-3-6"><span class="section-number-4">3.3.6</span> Plank Rotation</h4>
-<div class="outline-text-4" id="text-3-3-6">
+<div id="outline-container-sec-2-3-6" class="outline-4">
+<h4 id="sec-2-3-6"><span class="section-number-4">2.3.6</span> Plank Rotation</h4>
+<div class="outline-text-4" id="text-2-3-6">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="plankrotation">(make-table <span style="font-style: italic;">"+bulk:back"</span> <span style="font-style: italic;">"Plank Rotation"</span> <span style="font-style: italic;">"singleset30s"</span>)
@@ -1541,12 +1545,12 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-4" class="outline-3">
-<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Bulk Arms</h3>
-<div class="outline-text-3" id="text-3-4">
-</div><div id="outline-container-sec-3-4-1" class="outline-4">
-<h4 id="sec-3-4-1"><span class="section-number-4">3.4.1</span> Standing Curl</h4>
-<div class="outline-text-4" id="text-3-4-1">
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Bulk Arms</h3>
+<div class="outline-text-3" id="text-2-4">
+</div><div id="outline-container-sec-2-4-1" class="outline-4">
+<h4 id="sec-2-4-1"><span class="section-number-4">2.4.1</span> Standing Curl</h4>
+<div class="outline-text-4" id="text-2-4-1">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="standingcurl">(make-table <span style="font-style: italic;">"+bulk:arms"</span> <span style="font-style: italic;">"Standing Curl"</span> <span style="font-style: italic;">"progressiveset"</span>)
@@ -1623,9 +1627,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-4-2" class="outline-4">
-<h4 id="sec-3-4-2"><span class="section-number-4">3.4.2</span> Tricep Extension</h4>
-<div class="outline-text-4" id="text-3-4-2">
+<div id="outline-container-sec-2-4-2" class="outline-4">
+<h4 id="sec-2-4-2"><span class="section-number-4">2.4.2</span> Tricep Extension</h4>
+<div class="outline-text-4" id="text-2-4-2">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="tricepextension">(make-table <span style="font-style: italic;">"+bulk:arms"</span> <span style="font-style: italic;">"Tricep Extension"</span> <span style="font-style: italic;">"singleset2"</span>)
@@ -1640,9 +1644,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-4-3" class="outline-4">
-<h4 id="sec-3-4-3"><span class="section-number-4">3.4.3</span> Wide EZ Bar Curl</h4>
-<div class="outline-text-4" id="text-3-4-3">
+<div id="outline-container-sec-2-4-3" class="outline-4">
+<h4 id="sec-2-4-3"><span class="section-number-4">2.4.3</span> Wide EZ Bar Curl</h4>
+<div class="outline-text-4" id="text-2-4-3">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="wideezbarcurl">(make-table <span style="font-style: italic;">"+bulk:arms"</span> <span style="font-style: italic;">"Wide EZ Bar Curl"</span> <span style="font-style: italic;">"forceset"</span>)
@@ -1713,9 +1717,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-4-4" class="outline-4">
-<h4 id="sec-3-4-4"><span class="section-number-4">3.4.4</span> Skull Crusher</h4>
-<div class="outline-text-4" id="text-3-4-4">
+<div id="outline-container-sec-2-4-4" class="outline-4">
+<h4 id="sec-2-4-4"><span class="section-number-4">2.4.4</span> Skull Crusher</h4>
+<div class="outline-text-4" id="text-2-4-4">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="skullcrusher">(make-table <span style="font-style: italic;">"+bulk:arms"</span> <span style="font-style: italic;">"Skull Crusher"</span> <span style="font-style: italic;">"singleset2"</span>)
@@ -1780,9 +1784,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-4-5" class="outline-4">
-<h4 id="sec-3-4-5"><span class="section-number-4">3.4.5</span> Hammer Curl</h4>
-<div class="outline-text-4" id="text-3-4-5">
+<div id="outline-container-sec-2-4-5" class="outline-4">
+<h4 id="sec-2-4-5"><span class="section-number-4">2.4.5</span> Hammer Curl</h4>
+<div class="outline-text-4" id="text-2-4-5">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="hammercurl">(make-table <span style="font-style: italic;">"+bulk:arms"</span> <span style="font-style: italic;">"Hammer Curl"</span> <span style="font-style: italic;">"progressiveset"</span>)
@@ -1859,9 +1863,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-4-6" class="outline-4">
-<h4 id="sec-3-4-6"><span class="section-number-4">3.4.6</span> Tricep Kickback</h4>
-<div class="outline-text-4" id="text-3-4-6">
+<div id="outline-container-sec-2-4-6" class="outline-4">
+<h4 id="sec-2-4-6"><span class="section-number-4">2.4.6</span> Tricep Kickback</h4>
+<div class="outline-text-4" id="text-2-4-6">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="tricepkickback">(make-table <span style="font-style: italic;">"+bulk:arms"</span> <span style="font-style: italic;">"Tricep Kickback"</span> <span style="font-style: italic;">"progressiveset"</span>)
@@ -1938,9 +1942,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-4-7" class="outline-4">
-<h4 id="sec-3-4-7"><span class="section-number-4">3.4.7</span> Weighted Crunch</h4>
-<div class="outline-text-4" id="text-3-4-7">
+<div id="outline-container-sec-2-4-7" class="outline-4">
+<h4 id="sec-2-4-7"><span class="section-number-4">2.4.7</span> Weighted Crunch</h4>
+<div class="outline-text-4" id="text-2-4-7">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="weightedcrunch">(make-table <span style="font-style: italic;">"+bulk:arms"</span> <span style="font-style: italic;">"Weighted Crunch"</span> <span style="font-style: italic;">"singleset30"</span>)
@@ -1988,12 +1992,12 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-5" class="outline-3">
-<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Bulk Shoulders</h3>
-<div class="outline-text-3" id="text-3-5">
-</div><div id="outline-container-sec-3-5-1" class="outline-4">
-<h4 id="sec-3-5-1"><span class="section-number-4">3.5.1</span> Lateral Raise</h4>
-<div class="outline-text-4" id="text-3-5-1">
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> Bulk Shoulders</h3>
+<div class="outline-text-3" id="text-2-5">
+</div><div id="outline-container-sec-2-5-1" class="outline-4">
+<h4 id="sec-2-5-1"><span class="section-number-4">2.5.1</span> Lateral Raise</h4>
+<div class="outline-text-4" id="text-2-5-1">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="lateralraise">(make-table <span style="font-style: italic;">"+bulk:shoulders"</span> <span style="font-style: italic;">"Lateral Raise"</span> <span style="font-style: italic;">"singleset"</span>)
@@ -2045,9 +2049,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-5-2" class="outline-4">
-<h4 id="sec-3-5-2"><span class="section-number-4">3.5.2</span> Arnold Press</h4>
-<div class="outline-text-4" id="text-3-5-2">
+<div id="outline-container-sec-2-5-2" class="outline-4">
+<h4 id="sec-2-5-2"><span class="section-number-4">2.5.2</span> Arnold Press</h4>
+<div class="outline-text-4" id="text-2-5-2">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="arnoldpress">(make-table <span style="font-style: italic;">"+bulk:shoulders"</span> <span style="font-style: italic;">"Arnold Press"</span> <span style="font-style: italic;">"singleset2"</span>)
@@ -2105,9 +2109,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 
 
-<div id="outline-container-sec-3-5-3" class="outline-4">
-<h4 id="sec-3-5-3"><span class="section-number-4">3.5.3</span> Upright Row</h4>
-<div class="outline-text-4" id="text-3-5-3">
+<div id="outline-container-sec-2-5-3" class="outline-4">
+<h4 id="sec-2-5-3"><span class="section-number-4">2.5.3</span> Upright Row</h4>
+<div class="outline-text-4" id="text-2-5-3">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="uprightrow">(make-table <span style="font-style: italic;">"+bulk:shoulders"</span> <span style="font-style: italic;">"Upright Row"</span> <span style="font-style: italic;">"progressiveset"</span>)
@@ -2175,9 +2179,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 
 
-<div id="outline-container-sec-3-5-4" class="outline-4">
-<h4 id="sec-3-5-4"><span class="section-number-4">3.5.4</span> Alt. Front Raise</h4>
-<div class="outline-text-4" id="text-3-5-4">
+<div id="outline-container-sec-2-5-4" class="outline-4">
+<h4 id="sec-2-5-4"><span class="section-number-4">2.5.4</span> Alt. Front Raise</h4>
+<div class="outline-text-4" id="text-2-5-4">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="altfrontraise">(make-table <span style="font-style: italic;">"+bulk:shoulders"</span> <span style="font-style: italic;">"Alt. Front Raise"</span> <span style="font-style: italic;">"singleset"</span>)
@@ -2229,9 +2233,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-5-5" class="outline-4">
-<h4 id="sec-3-5-5"><span class="section-number-4">3.5.5</span> Plate Twist-Twist</h4>
-<div class="outline-text-4" id="text-3-5-5">
+<div id="outline-container-sec-2-5-5" class="outline-4">
+<h4 id="sec-2-5-5"><span class="section-number-4">2.5.5</span> Plate Twist-Twist</h4>
+<div class="outline-text-4" id="text-2-5-5">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="platetwisttwist">(make-table <span style="font-style: italic;">"+bulk:shoulders"</span> <span style="font-style: italic;">"Plate Twist-Twist"</span> <span style="font-style: italic;">"singleset10"</span>)
@@ -2283,9 +2287,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-5-6" class="outline-4">
-<h4 id="sec-3-5-6"><span class="section-number-4">3.5.6</span> Reverse Fly</h4>
-<div class="outline-text-4" id="text-3-5-6">
+<div id="outline-container-sec-2-5-6" class="outline-4">
+<h4 id="sec-2-5-6"><span class="section-number-4">2.5.6</span> Reverse Fly</h4>
+<div class="outline-text-4" id="text-2-5-6">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="reversefly2">(make-table <span style="font-style: italic;">"+bulk:shoulders"</span> <span style="font-style: italic;">"Reverse Fly"</span> <span style="font-style: italic;">"progressiveset"</span>)
@@ -2352,9 +2356,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-3-5-7" class="outline-4">
-<h4 id="sec-3-5-7"><span class="section-number-4">3.5.7</span> Plank Twist-Twist</h4>
-<div class="outline-text-4" id="text-3-5-7">
+<div id="outline-container-sec-2-5-7" class="outline-4">
+<h4 id="sec-2-5-7"><span class="section-number-4">2.5.7</span> Plank Twist-Twist</h4>
+<div class="outline-text-4" id="text-2-5-7">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="planktwisttwist">(make-table <span style="font-style: italic;">"+bulk:shoulders"</span> <span style="font-style: italic;">"Plank Twist-Twist"</span> <span style="font-style: italic;">"singleset30s"</span>)
@@ -2403,9 +2407,9 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 </div>
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Running</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Running</h2>
+<div class="outline-text-2" id="text-3">
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp" id="runtable">(run-table)
@@ -2454,7 +2458,7 @@ see <a href="src/beast-org.el">beast-org.el</a>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: thomas</p>
-<p class="date">Created: 2014-12-28 So 15:43</p>
+<p class="date">Created: 2014-12-28 So 16:04</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.50.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

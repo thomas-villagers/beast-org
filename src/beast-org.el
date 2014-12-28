@@ -1,8 +1,8 @@
 (require 'org-table)
 
-(defun get-date () (cdr (assoc "SCHEDULED" (org-entry-properties))))
-
-(defun get-time () (cdr (assoc "Time" (org-entry-properties))))
+(defun get-property (prop) (cdr (assoc prop (org-entry-properties))))
+(defun get-date () (get-property "SCHEDULED"))
+(defun get-time () (get-property "Time"))
 
 (defun alist-get-value (key alist) (car (cdr (assoc key alist))))
 
@@ -40,4 +40,3 @@
   (let ((the-list '(hline ("Date" "Time"))))
     (org-map-entries 'process-run-entry "+running" (list beast-org-file))
     (reverse the-list)))
-

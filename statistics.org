@@ -3,7 +3,9 @@
 #+HTML_HEAD_EXTRA: <style type="text/css">  table, th, td { border: 1px solid black; } th { background-color: green;  color: white;  } </style>
 #+HTML_HEAD_EXTRA: <style type="text/css">  table { margin-left: 0; margin-bottom: 10px; } </style>
 
-* Capture Templates
+* Programming
+
+** Setup
 
 #+NAME: initialize
 #+BEGIN_SRC emacs-lisp 
@@ -12,6 +14,8 @@
 #+END_SRC
 
 #+CALL: initialize() :results none 
+
+** Capture Templates
 
 #+NAME: capture-templates
 #+BEGIN_SRC emacs-lisp
@@ -26,8 +30,9 @@
         ("r" "running" entry (file+datetree beast-org-file) "* Running :running: \n SCHEDULED: %t\n %^{Time}p")))
 #+END_SRC
 
+** Emacs Lisp
 
-* Programming
+see [[file:src/beast-org.el][beast-org.el]]
 
 ** R 
 *** Simple R Graph 
@@ -56,11 +61,6 @@ I also go running once in a while. Graph the results:
  q <- autoplot.zoo(Time) + ylab("Time") + xlab("Date") + geom_point() + geom_line()
  q
 #+END_SRC
-
-
-** Emacs Lisp
-
-see [[file:src/beast-org.el][beast-org.el]]
 
 * Statistics
 
