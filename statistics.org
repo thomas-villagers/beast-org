@@ -7,14 +7,16 @@
 
 #+NAME: initialize
 #+BEGIN_SRC emacs-lisp 
-(setq beast-org-file "workouts-example.org")
+(setq beast-org-file "workouts-example.org") ; use absolute path or file goes to ~/org
 (load-file "src/beast-org.el")
 #+END_SRC
+
+#+CALL: initialize() :results none 
 
 #+NAME: capture-templates
 #+BEGIN_SRC emacs-lisp
 (setq org-capture-templates
-      '(("w" "workout" entry (file+datetree beast-org-file) "* %?\ņ")
+      '(("w" "workout" entry (file+datetree beast-org-file) "* %? \n SCHEDULED: %t\n")
         ("e" "beast abs" entry (file+datetree beast-org-file) "* Beast Abs :bodybeast:beast:abs: \n %?")
         ("c" "bulk chest" entry (file+datetree beast-org-file) "%[capturetemplates/bulkchest.org]")
         ("l" "bulk legs" entry (file+datetree beast-org-file) "%[capturetemplates/bulklegs.org]")
@@ -23,9 +25,6 @@
         ("s" "bulk shoulders" entry (file+datetree beast-org-file) "%[capturetemplates/bulkshoulders.org]")
         ("r" "running" entry (file+datetree beast-org-file) "* Running :running: \n SCHEDULED: %t\n %^{Time}p")))
 #+END_SRC
-
-#+CALL: initialize() :results none
-
 
 
 * Programming
@@ -65,7 +64,6 @@ I also go running once in a while. Graph the results:
 
 #+name: inclinefly
 #+BEGIN_SRC emacs-lisp :exports result 
-(load-file "src/beast-org.el")
 (make-table "+bulk:chest" "Incline Fly" "singleset")
 #+END_SRC
 
@@ -541,14 +539,14 @@ I also go running once in a while. Graph the results:
 
 #+NAME: arnoldpress
 #+BEGIN_SRC emacs-lisp :exports result 
-(make-table "+bulk:shoulders" "Lateral Raise" "singleset2") 
+(make-table "+bulk:shoulders" "Arnold Press" "singleset2") 
 #+END_SRC
 
 #+RESULTS: arnoldpress
 | Date          | 15 Reps | 12 Reps | 8 Reps | 8 Reps |
 |---------------+---------+---------+--------+--------|
 | 2014-12-16 Di |       0 |       0 |      0 |      0 |
-| 2014-12-23 Di |       4 |       5 |    7.5 |      0 |
+| 2014-12-23 Di |     7.5 |    8.75 |   12.5 |    7.5 |
 
 #+CALL: graphR[:exports results :results output graphics :file img/arnoldpress-r.png :width 400 :height 400](arnoldpress) :results file
 

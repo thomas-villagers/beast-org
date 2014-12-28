@@ -26,9 +26,17 @@ install.packages("reshape")
 
 ** Batch Export
 
+*** HTML 
+
 #+BEGIN_SRC sh
 emacs -l init.el statistics.org --batch -f org-html-export-to-html --kill
 #+END_SRC
 
+*** Markdown 
 
+#+BEGIN_SRC sh
+emacs -l init.el statistics.org --batch -f org-md-export-as-markdown --kill
+#+END_SRC
+
+Needs ox-md: =(require 'ox-md)= 
 

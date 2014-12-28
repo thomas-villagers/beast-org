@@ -7,7 +7,12 @@
 <li><a href="#sec-1-1">1.1. Capture Templates</a></li>
 <li><a href="#sec-1-2">1.2. Emacs-Lisp</a></li>
 <li><a href="#sec-1-3">1.3. R</a></li>
-<li><a href="#sec-1-4">1.4. Batch Export</a></li>
+<li><a href="#sec-1-4">1.4. Batch Export</a>
+<ul>
+<li><a href="#sec-1-4-1">1.4.1. HTML</a></li>
+<li><a href="#sec-1-4-2">1.4.2. Markdown</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -39,4 +44,12 @@ R needs zoo, ggplot2 and reshape2
 
 ## Batch Export<a id="sec-1-4" name="sec-1-4"></a>
 
+### HTML<a id="sec-1-4-1" name="sec-1-4-1"></a>
+
     emacs -l init.el statistics.org --batch -f org-html-export-to-html --kill
+
+### Markdown<a id="sec-1-4-2" name="sec-1-4-2"></a>
+
+    emacs -l init.el statistics.org --batch -f org-md-export-as-markdown --kill
+
+Needs ox-md: `(require 'ox-md)`
