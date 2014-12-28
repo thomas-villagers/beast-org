@@ -57,6 +57,11 @@ I also go running once in a while. Graph the results:
  q
 #+END_SRC
 
+
+** Emacs Lisp
+
+see [[file:src/beast-org.el][beast-org.el]]
+
 * Statistics
 
 ** Bulk Chest 
@@ -547,6 +552,8 @@ I also go running once in a while. Graph the results:
 |---------------+---------+---------+--------+--------|
 | 2014-12-16 Di |       0 |       0 |      0 |      0 |
 | 2014-12-23 Di |     7.5 |    8.75 |   12.5 |    7.5 |
+
+
 
 #+CALL: graphR[:exports results :results output graphics :file img/arnoldpress-r.png :width 400 :height 400](arnoldpress) :results file
 
