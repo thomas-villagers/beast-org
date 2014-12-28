@@ -537,6 +537,7 @@ I also go running once in a while. Graph the results:
 |---------------+---------+---------+--------|
 | 2014-12-16 Di |       0 |       0 |      0 |
 | 2014-12-23 Di |       4 |       5 |    7.5 |
+| 2014-12-28 So |       4 |       5 |      5 |
 
 #+CALL: graphR[:exports results :results output graphics :file img/lateralraise-r.png :width 400 :height 400](lateralraise) :results file
 
@@ -552,9 +553,9 @@ I also go running once in a while. Graph the results:
 |---------------+---------+---------+--------+--------|
 | 2014-12-16 Di |       0 |       0 |      0 |      0 |
 | 2014-12-23 Di |     7.5 |    8.75 |   12.5 |    7.5 |
+| 2014-12-28 So |     7.5 |    8.75 |     10 |   8.75 |
 
 #+CALL: graphR[:exports results :results output graphics :file img/arnoldpress-r.png :width 400 :height 400](arnoldpress) :results file
-
 
 *** Upright Row
 
@@ -568,9 +569,9 @@ I also go running once in a while. Graph the results:
 |---------------+---------+---------+--------+--------+---------+---------|
 | 2014-12-16 Di |       0 |       0 |      0 |      0 |       0 |       0 |
 | 2014-12-23 Di |       5 |    6.25 |   8.75 |   8.75 |    6.25 |       5 |
+| 2014-12-28 So |    6.25 |     7.5 |   8.75 |   8.75 |    6.25 |       5 |
 
 #+CALL: graphR[:exports results :results output graphics :file img/uprightrow-r.png :width 400 :height 400](uprightrow) :results file
-
 
 *** Alt. Front Raise
 
@@ -584,6 +585,7 @@ I also go running once in a while. Graph the results:
 |---------------+---------+---------+--------|
 | 2014-12-16 Di |       0 |       0 |      0 |
 | 2014-12-23 Di |       4 |       5 |    7.5 |
+| 2014-12-28 So |       4 |       5 |    7.5 |
 
 #+CALL: graphR[:exports results :results output graphics :file img/altfrontraise-r.png :width 400 :height 400](altfrontraise) :results file
 
@@ -599,6 +601,7 @@ I also go running once in a while. Graph the results:
 |---------------+---------+---------+---------|
 | 2014-12-16 Di |       0 |       0 |       0 |
 | 2014-12-23 Di |       5 |       5 |       5 |
+| 2014-12-28 So |       5 |       5 |      10 |
 
 #+CALL: graphR[:exports results :results output graphics :file img/platetwisttwist-r.png :width 400 :height 400](platetwisttwist) :results file
 
@@ -614,23 +617,10 @@ I also go running once in a while. Graph the results:
 |---------------+---------+---------+--------+--------+---------+---------|
 | 2014-12-16 Di |       0 |       0 |      0 |      0 |       0 |       0 |
 | 2014-12-23 Di |       4 |       5 |      5 |    7.5 |       4 |       3 |
+| 2014-12-28 So |       4 |       5 |      5 |      5 |       4 |       3 |
 
 #+CALL: graphR[:exports results :results output graphics :file img/reversefly2-r.png :width 400 :height 400](reversefly2) :results file
 
-*** Plank Twist-Twist
-
-#+NAME: planktwisttwist
-#+BEGIN_SRC emacs-lisp :exports result 
-(make-table "+bulk:shoulders" "Plank Twist-Twist" "singleset30s") 
-#+END_SRC
-
-#+RESULTS: planktwisttwist
-| Date          | 30 Sec. | 30 Sec. |
-|---------------+---------+---------|
-| 2014-12-16 Di |       0 |       0 |
-| 2014-12-23 Di |       4 |       4 |
-
-#+CALL: graphR[:exports results :results output graphics :file img/planktwisttwist-r.png :width 400 :height 400](planktwisttwist) :results file
 
 * Running
 

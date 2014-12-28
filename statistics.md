@@ -66,7 +66,6 @@
 <li><a href="#sec-2-5-4">2.5.4. Alt. Front Raise</a></li>
 <li><a href="#sec-2-5-5">2.5.5. Plate Twist-Twist</a></li>
 <li><a href="#sec-2-5-6">2.5.6. Reverse Fly</a></li>
-<li><a href="#sec-2-5-7">2.5.7. Plank Twist-Twist</a></li>
 </ul>
 </li>
 </ul>
@@ -1617,6 +1616,14 @@ I also go running once in a while. Graph the results:
 <td class="right">5</td>
 <td class="right">7.5</td>
 </tr>
+
+
+<tr>
+<td class="left">2014-12-28 So</td>
+<td class="right">4</td>
+<td class="right">5</td>
+<td class="right">5</td>
+</tr>
 </tbody>
 </table>
 
@@ -1666,6 +1673,15 @@ I also go running once in a while. Graph the results:
 <td class="right">8.75</td>
 <td class="right">12.5</td>
 <td class="right">7.5</td>
+</tr>
+
+
+<tr>
+<td class="left">2014-12-28 So</td>
+<td class="right">7.5</td>
+<td class="right">8.75</td>
+<td class="right">10</td>
+<td class="right">8.75</td>
 </tr>
 </tbody>
 </table>
@@ -1727,6 +1743,17 @@ I also go running once in a while. Graph the results:
 <td class="right">6.25</td>
 <td class="right">5</td>
 </tr>
+
+
+<tr>
+<td class="left">2014-12-28 So</td>
+<td class="right">6.25</td>
+<td class="right">7.5</td>
+<td class="right">8.75</td>
+<td class="right">8.75</td>
+<td class="right">6.25</td>
+<td class="right">5</td>
+</tr>
 </tbody>
 </table>
 
@@ -1768,6 +1795,14 @@ I also go running once in a while. Graph the results:
 
 <tr>
 <td class="left">2014-12-23 Di</td>
+<td class="right">4</td>
+<td class="right">5</td>
+<td class="right">7.5</td>
+</tr>
+
+
+<tr>
+<td class="left">2014-12-28 So</td>
 <td class="right">4</td>
 <td class="right">5</td>
 <td class="right">7.5</td>
@@ -1816,6 +1851,14 @@ I also go running once in a while. Graph the results:
 <td class="right">5</td>
 <td class="right">5</td>
 <td class="right">5</td>
+</tr>
+
+
+<tr>
+<td class="left">2014-12-28 So</td>
+<td class="right">5</td>
+<td class="right">5</td>
+<td class="right">10</td>
 </tr>
 </tbody>
 </table>
@@ -1877,50 +1920,21 @@ I also go running once in a while. Graph the results:
 <td class="right">4</td>
 <td class="right">3</td>
 </tr>
+
+
+<tr>
+<td class="left">2014-12-28 So</td>
+<td class="right">4</td>
+<td class="right">5</td>
+<td class="right">5</td>
+<td class="right">5</td>
+<td class="right">4</td>
+<td class="right">3</td>
+</tr>
 </tbody>
 </table>
 
 ![img](img/reversefly2-r.png)
-
-### Plank Twist-Twist<a id="sec-2-5-7" name="sec-2-5-7"></a>
-
-    (make-table "+bulk:shoulders" "Plank Twist-Twist" "singleset30s")
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="left" />
-
-<col  class="right" />
-
-<col  class="right" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="left">Date</th>
-<th scope="col" class="right">30 Sec.</th>
-<th scope="col" class="right">30 Sec.</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="left">2014-12-16 Di</td>
-<td class="right">0</td>
-<td class="right">0</td>
-</tr>
-
-
-<tr>
-<td class="left">2014-12-23 Di</td>
-<td class="right">4</td>
-<td class="right">4</td>
-</tr>
-</tbody>
-</table>
-
-![img](img/planktwisttwist-r.png)
 
 # Running<a id="sec-3" name="sec-3"></a>
 
