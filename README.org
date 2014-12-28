@@ -39,8 +39,10 @@ emacs -l init.el statistics.org --batch -f org-html-export-to-html --kill
 Needs ox-md: =(require 'ox-md)= 
 
 #+BEGIN_SRC sh
-emacs -l init.el statistics.org --batch -f org-md-export-as-markdown --kill
+emacs -l init.el statistics.org --batch -f org-md-export-to-markdown --kill
 #+END_SRC
+
+
 
 
 

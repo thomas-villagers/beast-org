@@ -54,4 +54,4 @@ R needs zoo, ggplot2 and reshape2
 
 Needs ox-md: `(require 'ox-md)` 
 
-    emacs -l init.el statistics.org --batch -f org-md-export-as-markdown --kill
+    emacs -l init.el statistics.org --batch -f org-md-export-to-markdown --kill

@@ -2,86 +2,94 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Capture Templates</a></li>
-<li><a href="#sec-2">2. Programming</a>
+<li><a href="#sec-1">1. Programming</a>
 <ul>
-<li><a href="#sec-2-1">2.1. R</a>
+<li><a href="#sec-1-1">1.1. Setup</a></li>
+<li><a href="#sec-1-2">1.2. Capture Templates</a></li>
+<li><a href="#sec-1-3">1.3. Emacs Lisp</a></li>
+<li><a href="#sec-1-4">1.4. R</a>
 <ul>
-<li><a href="#sec-2-1-1">2.1.1. Simple R Graph</a></li>
-<li><a href="#sec-2-1-2">2.1.2. R Graph with <code>MM:SS</code> at y-axis</a></li>
+<li><a href="#sec-1-4-1">1.4.1. Simple R Graph</a></li>
+<li><a href="#sec-1-4-2">1.4.2. R Graph with <code>MM:SS</code> at y-axis</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#sec-3">3. Statistics</a>
+<li><a href="#sec-2">2. Statistics</a>
 <ul>
-<li><a href="#sec-3-1">3.1. Bulk Chest</a>
+<li><a href="#sec-2-1">2.1. Bulk Chest</a>
 <ul>
-<li><a href="#sec-3-1-1">3.1.1. Incline Fly</a></li>
-<li><a href="#sec-3-1-2">3.1.2. Incline Press</a></li>
-<li><a href="#sec-3-1-3">3.1.3. Chest Press with Rotation</a></li>
-<li><a href="#sec-3-1-4">3.1.4. Progressive Incline Press</a></li>
-<li><a href="#sec-3-1-5">3.1.5. Close Grip Press to Fly</a></li>
+<li><a href="#sec-2-1-1">2.1.1. Incline Fly</a></li>
+<li><a href="#sec-2-1-2">2.1.2. Incline Press</a></li>
+<li><a href="#sec-2-1-3">2.1.3. Chest Press with Rotation</a></li>
+<li><a href="#sec-2-1-4">2.1.4. Progressive Incline Press</a></li>
+<li><a href="#sec-2-1-5">2.1.5. Close Grip Press to Fly</a></li>
 </ul>
 </li>
-<li><a href="#sec-3-2">3.2. Bulk Legs</a>
+<li><a href="#sec-2-2">2.2. Bulk Legs</a>
 <ul>
-<li><a href="#sec-3-2-1">3.2.1. Front to back Lunge</a></li>
-<li><a href="#sec-3-2-2">3.2.2. Squat</a></li>
-<li><a href="#sec-3-2-3">3.2.3. Full to 1/2 Sumo Squat</a></li>
-<li><a href="#sec-3-2-4">3.2.4. Split Squat w/EZ Bar</a></li>
-<li><a href="#sec-3-2-5">3.2.5. Stiff Leg Deadlift</a></li>
-<li><a href="#sec-3-2-6">3.2.6. Alt. Side Squat</a></li>
-<li><a href="#sec-3-2-7">3.2.7. Calf Raise</a></li>
+<li><a href="#sec-2-2-1">2.2.1. Front to back Lunge</a></li>
+<li><a href="#sec-2-2-2">2.2.2. Squat</a></li>
+<li><a href="#sec-2-2-3">2.2.3. Full to 1/2 Sumo Squat</a></li>
+<li><a href="#sec-2-2-4">2.2.4. Split Squat w/EZ Bar</a></li>
+<li><a href="#sec-2-2-5">2.2.5. Stiff Leg Deadlift</a></li>
+<li><a href="#sec-2-2-6">2.2.6. Alt. Side Squat</a></li>
+<li><a href="#sec-2-2-7">2.2.7. Calf Raise</a></li>
 </ul>
 </li>
-<li><a href="#sec-3-3">3.3. Bulk Back</a>
+<li><a href="#sec-2-3">2.3. Bulk Back</a>
 <ul>
-<li><a href="#sec-3-3-1">3.3.1. Pull-Over</a></li>
-<li><a href="#sec-3-3-2">3.3.2. Reverse Grip Row</a></li>
-<li><a href="#sec-3-3-3">3.3.3. One Arm Row</a></li>
-<li><a href="#sec-3-3-4">3.3.4. Deadlift</a></li>
-<li><a href="#sec-3-3-5">3.3.5. Reverse Fly</a></li>
-<li><a href="#sec-3-3-6">3.3.6. Plank Rotation</a></li>
+<li><a href="#sec-2-3-1">2.3.1. Pull-Over</a></li>
+<li><a href="#sec-2-3-2">2.3.2. Reverse Grip Row</a></li>
+<li><a href="#sec-2-3-3">2.3.3. One Arm Row</a></li>
+<li><a href="#sec-2-3-4">2.3.4. Deadlift</a></li>
+<li><a href="#sec-2-3-5">2.3.5. Reverse Fly</a></li>
+<li><a href="#sec-2-3-6">2.3.6. Plank Rotation</a></li>
 </ul>
 </li>
-<li><a href="#sec-3-4">3.4. Bulk Arms</a>
+<li><a href="#sec-2-4">2.4. Bulk Arms</a>
 <ul>
-<li><a href="#sec-3-4-1">3.4.1. Standing Curl</a></li>
-<li><a href="#sec-3-4-2">3.4.2. Tricep Extension</a></li>
-<li><a href="#sec-3-4-3">3.4.3. Wide EZ Bar Curl</a></li>
-<li><a href="#sec-3-4-4">3.4.4. Skull Crusher</a></li>
-<li><a href="#sec-3-4-5">3.4.5. Hammer Curl</a></li>
-<li><a href="#sec-3-4-6">3.4.6. Tricep Kickback</a></li>
-<li><a href="#sec-3-4-7">3.4.7. Weighted Crunch</a></li>
+<li><a href="#sec-2-4-1">2.4.1. Standing Curl</a></li>
+<li><a href="#sec-2-4-2">2.4.2. Tricep Extension</a></li>
+<li><a href="#sec-2-4-3">2.4.3. Wide EZ Bar Curl</a></li>
+<li><a href="#sec-2-4-4">2.4.4. Skull Crusher</a></li>
+<li><a href="#sec-2-4-5">2.4.5. Hammer Curl</a></li>
+<li><a href="#sec-2-4-6">2.4.6. Tricep Kickback</a></li>
+<li><a href="#sec-2-4-7">2.4.7. Weighted Crunch</a></li>
 </ul>
 </li>
-<li><a href="#sec-3-5">3.5. Bulk Shoulders</a>
+<li><a href="#sec-2-5">2.5. Bulk Shoulders</a>
 <ul>
-<li><a href="#sec-3-5-1">3.5.1. Lateral Raise</a></li>
-<li><a href="#sec-3-5-2">3.5.2. Arnold Press</a></li>
-<li><a href="#sec-3-5-3">3.5.3. Upright Row</a></li>
-<li><a href="#sec-3-5-4">3.5.4. Alt. Front Raise</a></li>
-<li><a href="#sec-3-5-5">3.5.5. Plate Twist-Twist</a></li>
-<li><a href="#sec-3-5-6">3.5.6. Reverse Fly</a></li>
-<li><a href="#sec-3-5-7">3.5.7. Plank Twist-Twist</a></li>
+<li><a href="#sec-2-5-1">2.5.1. Lateral Raise</a></li>
+<li><a href="#sec-2-5-2">2.5.2. Arnold Press</a></li>
+<li><a href="#sec-2-5-3">2.5.3. Upright Row</a></li>
+<li><a href="#sec-2-5-4">2.5.4. Alt. Front Raise</a></li>
+<li><a href="#sec-2-5-5">2.5.5. Plate Twist-Twist</a></li>
+<li><a href="#sec-2-5-6">2.5.6. Reverse Fly</a></li>
+<li><a href="#sec-2-5-7">2.5.7. Plank Twist-Twist</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#sec-4">4. Running</a></li>
+<li><a href="#sec-3">3. Running</a></li>
 </ul>
 </div>
 </div>
 
 
-# Capture Templates<a id="sec-1" name="sec-1"></a>
+# Programming<a id="sec-1" name="sec-1"></a>
 
-    (setq beast-org-file "workouts-example.org")
+## Setup<a id="sec-1-1" name="sec-1-1"></a>
+
+    (setq beast-org-file "workouts-example.org") ; use absolute path or capture file goes to ~/org
     (load-file "src/beast-org.el")
 
+    t
+
+## Capture Templates<a id="sec-1-2" name="sec-1-2"></a>
+
     (setq org-capture-templates
-          '(("w" "workout" entry (file+datetree beast-org-file) "* %?\ņ")
+          '(("w" "workout" entry (file+datetree beast-org-file) "* %? \n SCHEDULED: %t\n")
             ("e" "beast abs" entry (file+datetree beast-org-file) "* Beast Abs :bodybeast:beast:abs: \n %?")
             ("c" "bulk chest" entry (file+datetree beast-org-file) "%[capturetemplates/bulkchest.org]")
             ("l" "bulk legs" entry (file+datetree beast-org-file) "%[capturetemplates/bulklegs.org]")
@@ -90,13 +98,13 @@
             ("s" "bulk shoulders" entry (file+datetree beast-org-file) "%[capturetemplates/bulkshoulders.org]")
             ("r" "running" entry (file+datetree beast-org-file) "* Running :running: \n SCHEDULED: %t\n %^{Time}p")))
 
-    t
+## Emacs Lisp<a id="sec-1-3" name="sec-1-3"></a>
 
-# Programming<a id="sec-2" name="sec-2"></a>
+see [beast-org.el](src/beast-org.el)
 
-## R<a id="sec-2-1" name="sec-2-1"></a>
+## R<a id="sec-1-4" name="sec-1-4"></a>
 
-### Simple R Graph<a id="sec-2-1-1" name="sec-2-1-1"></a>
+### Simple R Graph<a id="sec-1-4-1" name="sec-1-4-1"></a>
 
 This graph captures a set
 
@@ -105,7 +113,7 @@ This graph captures a set
     p <- ggplot(melt(table, id="Date"), aes(x=Date,y=value, group = variable, colour = variable))  +  geom_point() + ylab("Weight (Kg)") + geom_line()
     p
 
-### R Graph with `MM:SS` at y-axis<a id="sec-2-1-2" name="sec-2-1-2"></a>
+### R Graph with `MM:SS` at y-axis<a id="sec-1-4-2" name="sec-1-4-2"></a>
 
 I also go running once in a while. Graph the results:
 
@@ -117,13 +125,12 @@ I also go running once in a while. Graph the results:
     q <- autoplot.zoo(Time) + ylab("Time") + xlab("Date") + geom_point() + geom_line()
     q
 
-# Statistics<a id="sec-3" name="sec-3"></a>
+# Statistics<a id="sec-2" name="sec-2"></a>
 
-## Bulk Chest<a id="sec-3-1" name="sec-3-1"></a>
+## Bulk Chest<a id="sec-2-1" name="sec-2-1"></a>
 
-### Incline Fly<a id="sec-3-1-1" name="sec-3-1-1"></a>
+### Incline Fly<a id="sec-2-1-1" name="sec-2-1-1"></a>
 
-    (load-file "src/beast-org.el")
     (make-table "+bulk:chest" "Incline Fly" "singleset")
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -175,7 +182,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/inclinefly-r.png)
 
-### Incline Press<a id="sec-3-1-2" name="sec-3-1-2"></a>
+### Incline Press<a id="sec-2-1-2" name="sec-2-1-2"></a>
 
     (make-table "+bulk:chest" "Incline Press" "singleset2")
 
@@ -234,7 +241,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/inclinepress-r.png)
 
-### Chest Press with Rotation<a id="sec-3-1-3" name="sec-3-1-3"></a>
+### Chest Press with Rotation<a id="sec-2-1-3" name="sec-2-1-3"></a>
 
     (make-table "+bulk:chest" "Chest Press with Rotation" "forceset")
 
@@ -299,7 +306,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/chestpressrotation-r.png)
 
-### Progressive Incline Press<a id="sec-3-1-4" name="sec-3-1-4"></a>
+### Progressive Incline Press<a id="sec-2-1-4" name="sec-2-1-4"></a>
 
     (make-table "+bulk:chest" "Incline Press 2" "progressiveset")
 
@@ -370,7 +377,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/inclinepress2-r.png)
 
-### Close Grip Press to Fly<a id="sec-3-1-5" name="sec-3-1-5"></a>
+### Close Grip Press to Fly<a id="sec-2-1-5" name="sec-2-1-5"></a>
 
     (make-table "+bulk:chest" "Close Grip Press to Fly" "singleset")
 
@@ -423,9 +430,9 @@ I also go running once in a while. Graph the results:
 
 ![img](img/closegrippresstofly-r.png)
 
-## Bulk Legs<a id="sec-3-2" name="sec-3-2"></a>
+## Bulk Legs<a id="sec-2-2" name="sec-2-2"></a>
 
-### Front to back Lunge<a id="sec-3-2-1" name="sec-3-2-1"></a>
+### Front to back Lunge<a id="sec-2-2-1" name="sec-2-2-1"></a>
 
     (make-table "+bulk:legs" "Front to Back Lunge" "singleset12")
 
@@ -478,7 +485,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/fronttobacklunge-r.png)
 
-### Squat<a id="sec-3-2-2" name="sec-3-2-2"></a>
+### Squat<a id="sec-2-2-2" name="sec-2-2-2"></a>
 
     (make-table "+bulk:legs" "Squat" "progressiveset")
 
@@ -537,7 +544,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/squat-r.png)
 
-### Full to 1/2 Sumo Squat<a id="sec-3-2-3" name="sec-3-2-3"></a>
+### Full to 1/2 Sumo Squat<a id="sec-2-2-3" name="sec-2-2-3"></a>
 
     (make-table "+bulk:legs" "Full to 1/2 Sumo Squat" "forceset")
 
@@ -602,7 +609,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/fullto12sumosquat-r.png)
 
-### Split Squat w/EZ Bar<a id="sec-3-2-4" name="sec-3-2-4"></a>
+### Split Squat w/EZ Bar<a id="sec-2-2-4" name="sec-2-2-4"></a>
 
     (make-table "+bulk:legs" "Split Squat w/EZ Bar" "progressiveset")
 
@@ -673,7 +680,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/splitsquatwezbar-r.png)
 
-### Stiff Leg Deadlift<a id="sec-3-2-5" name="sec-3-2-5"></a>
+### Stiff Leg Deadlift<a id="sec-2-2-5" name="sec-2-2-5"></a>
 
     (make-table "+bulk:legs" "Stiff Leg Deadlift" "singleset2")
 
@@ -732,7 +739,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/stifflegdeadlift-r.png)
 
-### Alt. Side Squat<a id="sec-3-2-6" name="sec-3-2-6"></a>
+### Alt. Side Squat<a id="sec-2-2-6" name="sec-2-2-6"></a>
 
     (make-table "+bulk:legs" "Alt. Side Squat" "singleset10")
 
@@ -785,7 +792,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/altsidesquat-r.png)
 
-### Calf Raise<a id="sec-3-2-7" name="sec-3-2-7"></a>
+### Calf Raise<a id="sec-2-2-7" name="sec-2-2-7"></a>
 
     (make-table "+bulk:legs" "Calf Raise" "singleset50")
 
@@ -832,9 +839,9 @@ I also go running once in a while. Graph the results:
 
 ![img](img/calfraise-r.png)
 
-## Bulk Back<a id="sec-3-3" name="sec-3-3"></a>
+## Bulk Back<a id="sec-2-3" name="sec-2-3"></a>
 
-### Pull-Over<a id="sec-3-3-1" name="sec-3-3-1"></a>
+### Pull-Over<a id="sec-2-3-1" name="sec-2-3-1"></a>
 
     (make-table "+bulk:back" "Pull-Over" "singleset2")
 
@@ -893,7 +900,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/pullover-r.png)
 
-### Reverse Grip Row<a id="sec-3-3-2" name="sec-3-3-2"></a>
+### Reverse Grip Row<a id="sec-2-3-2" name="sec-2-3-2"></a>
 
     (make-table "+bulk:back" "Reverse Grip Row" "progressiveset")
 
@@ -964,7 +971,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/reversegriprow-r.png)
 
-### One Arm Row<a id="sec-3-3-3" name="sec-3-3-3"></a>
+### One Arm Row<a id="sec-2-3-3" name="sec-2-3-3"></a>
 
     (make-table "+bulk:back" "One-Arm Row" "forceset")
 
@@ -1029,7 +1036,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/onearmrow-r.png)
 
-### Deadlift<a id="sec-3-3-4" name="sec-3-3-4"></a>
+### Deadlift<a id="sec-2-3-4" name="sec-2-3-4"></a>
 
     (make-table "+bulk:back" "Deadlift" "singleset2")
 
@@ -1088,7 +1095,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/deadlift-r.png)
 
-### Reverse Fly<a id="sec-3-3-5" name="sec-3-3-5"></a>
+### Reverse Fly<a id="sec-2-3-5" name="sec-2-3-5"></a>
 
     (make-table "+bulk:back" "Reverse Fly" "singleset15")
 
@@ -1135,7 +1142,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/reversefly-r.png)
 
-### Plank Rotation<a id="sec-3-3-6" name="sec-3-3-6"></a>
+### Plank Rotation<a id="sec-2-3-6" name="sec-2-3-6"></a>
 
     (make-table "+bulk:back" "Plank Rotation" "singleset30s")
 
@@ -1182,9 +1189,9 @@ I also go running once in a while. Graph the results:
 
 ![img](img/plankrotation-r.png)
 
-## Bulk Arms<a id="sec-3-4" name="sec-3-4"></a>
+## Bulk Arms<a id="sec-2-4" name="sec-2-4"></a>
 
-### Standing Curl<a id="sec-3-4-1" name="sec-3-4-1"></a>
+### Standing Curl<a id="sec-2-4-1" name="sec-2-4-1"></a>
 
     (make-table "+bulk:arms" "Standing Curl" "progressiveset")
 
@@ -1255,13 +1262,13 @@ I also go running once in a while. Graph the results:
 
 ![img](img/standingcurl-r.png)
 
-### Tricep Extension<a id="sec-3-4-2" name="sec-3-4-2"></a>
+### Tricep Extension<a id="sec-2-4-2" name="sec-2-4-2"></a>
 
     (make-table "+bulk:arms" "Tricep Extension" "singleset2")
 
 ![img](img/tricepextension-r.png)
 
-### Wide EZ Bar Curl<a id="sec-3-4-3" name="sec-3-4-3"></a>
+### Wide EZ Bar Curl<a id="sec-2-4-3" name="sec-2-4-3"></a>
 
     (make-table "+bulk:arms" "Wide EZ Bar Curl" "forceset")
 
@@ -1326,7 +1333,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/wideezbarcurl-r.png)
 
-### Skull Crusher<a id="sec-3-4-4" name="sec-3-4-4"></a>
+### Skull Crusher<a id="sec-2-4-4" name="sec-2-4-4"></a>
 
     (make-table "+bulk:arms" "Skull Crusher" "singleset2")
 
@@ -1385,7 +1392,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/skullcrusher-r.png)
 
-### Hammer Curl<a id="sec-3-4-5" name="sec-3-4-5"></a>
+### Hammer Curl<a id="sec-2-4-5" name="sec-2-4-5"></a>
 
     (make-table "+bulk:arms" "Hammer Curl" "progressiveset")
 
@@ -1456,7 +1463,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/hammercurl-r.png)
 
-### Tricep Kickback<a id="sec-3-4-6" name="sec-3-4-6"></a>
+### Tricep Kickback<a id="sec-2-4-6" name="sec-2-4-6"></a>
 
     (make-table "+bulk:arms" "Tricep Kickback" "progressiveset")
 
@@ -1527,7 +1534,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/tricepkickback-r.png)
 
-### Weighted Crunch<a id="sec-3-4-7" name="sec-3-4-7"></a>
+### Weighted Crunch<a id="sec-2-4-7" name="sec-2-4-7"></a>
 
     (make-table "+bulk:arms" "Weighted Crunch" "singleset30")
 
@@ -1568,9 +1575,9 @@ I also go running once in a while. Graph the results:
 
 ![img](img/weightedcrunch-r.png)
 
-## Bulk Shoulders<a id="sec-3-5" name="sec-3-5"></a>
+## Bulk Shoulders<a id="sec-2-5" name="sec-2-5"></a>
 
-### Lateral Raise<a id="sec-3-5-1" name="sec-3-5-1"></a>
+### Lateral Raise<a id="sec-2-5-1" name="sec-2-5-1"></a>
 
     (make-table "+bulk:shoulders" "Lateral Raise" "singleset")
 
@@ -1615,9 +1622,9 @@ I also go running once in a while. Graph the results:
 
 ![img](img/lateralraise-r.png)
 
-### Arnold Press<a id="sec-3-5-2" name="sec-3-5-2"></a>
+### Arnold Press<a id="sec-2-5-2" name="sec-2-5-2"></a>
 
-    (make-table "+bulk:shoulders" "Lateral Raise" "singleset2")
+    (make-table "+bulk:shoulders" "Arnold Press" "singleset2")
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1655,17 +1662,17 @@ I also go running once in a while. Graph the results:
 
 <tr>
 <td class="left">2014-12-23 Di</td>
-<td class="right">4</td>
-<td class="right">5</td>
 <td class="right">7.5</td>
-<td class="right">0</td>
+<td class="right">8.75</td>
+<td class="right">12.5</td>
+<td class="right">7.5</td>
 </tr>
 </tbody>
 </table>
 
 ![img](img/arnoldpress-r.png)
 
-### Upright Row<a id="sec-3-5-3" name="sec-3-5-3"></a>
+### Upright Row<a id="sec-2-5-3" name="sec-2-5-3"></a>
 
     (make-table "+bulk:shoulders" "Upright Row" "progressiveset")
 
@@ -1725,7 +1732,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/uprightrow-r.png)
 
-### Alt. Front Raise<a id="sec-3-5-4" name="sec-3-5-4"></a>
+### Alt. Front Raise<a id="sec-2-5-4" name="sec-2-5-4"></a>
 
     (make-table "+bulk:shoulders" "Alt. Front Raise" "singleset")
 
@@ -1770,7 +1777,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/altfrontraise-r.png)
 
-### Plate Twist-Twist<a id="sec-3-5-5" name="sec-3-5-5"></a>
+### Plate Twist-Twist<a id="sec-2-5-5" name="sec-2-5-5"></a>
 
     (make-table "+bulk:shoulders" "Plate Twist-Twist" "singleset10")
 
@@ -1815,7 +1822,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/platetwisttwist-r.png)
 
-### Reverse Fly<a id="sec-3-5-6" name="sec-3-5-6"></a>
+### Reverse Fly<a id="sec-2-5-6" name="sec-2-5-6"></a>
 
     (make-table "+bulk:shoulders" "Reverse Fly" "progressiveset")
 
@@ -1875,7 +1882,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/reversefly2-r.png)
 
-### Plank Twist-Twist<a id="sec-3-5-7" name="sec-3-5-7"></a>
+### Plank Twist-Twist<a id="sec-2-5-7" name="sec-2-5-7"></a>
 
     (make-table "+bulk:shoulders" "Plank Twist-Twist" "singleset30s")
 
@@ -1915,7 +1922,7 @@ I also go running once in a while. Graph the results:
 
 ![img](img/planktwisttwist-r.png)
 
-# Running<a id="sec-4" name="sec-4"></a>
+# Running<a id="sec-3" name="sec-3"></a>
 
     (run-table)
 
