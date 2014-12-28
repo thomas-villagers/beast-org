@@ -109,15 +109,17 @@
 
 # Capture Templates<a id="sec-1" name="sec-1"></a>
 
+    (setq beast-org-file "example.org")
+    
     (setq org-capture-templates
-          '(("w" "workout" entry (file+datetree "training.org") "* %?\ņ")
-            ("e" "beast abs" entry (file+datetree "training.org") "* Beast Abs :bodybeast:beast:abs: \n %?")
-            ("c" "bulk chest" entry (file+datetree "training.org") "%[capturetemplates/bulkchest.org]")
-            ("l" "bulk legs" entry (file+datetree "training.org") "%[capturetemplates/bulklegs.org]")
-            ("a" "bulk arms" entry (file+datetree "training.org") "%[capturetemplates/bulkarms.org]")
-            ("b" "bulk back" entry (file+datetree "training.org") "%[capturetemplates/bulkback.org]")
-            ("s" "bulk shoulders" entry (file+datetree "training.org") "%[capturetemplates/bulkshoulders.org]")
-            ("r" "running" entry (file+datetree "training.org") "* Running :running: \n SCHEDULED: %t\n %^{Time}p")))
+          '(("w" "workout" entry (file+datetree beast-org-file) "* %?\ņ")
+            ("e" "beast abs" entry (file+datetree beast-org-file) "* Beast Abs :bodybeast:beast:abs: \n %?")
+            ("c" "bulk chest" entry (file+datetree beast-org-file) "%[capturetemplates/bulkchest.org]")
+            ("l" "bulk legs" entry (file+datetree beast-org-file) "%[capturetemplates/bulklegs.org]")
+            ("a" "bulk arms" entry (file+datetree beast-org-file) "%[capturetemplates/bulkarms.org]")
+            ("b" "bulk back" entry (file+datetree beast-org-file) "%[capturetemplates/bulkback.org]")
+            ("s" "bulk shoulders" entry (file+datetree beast-org-file) "%[capturetemplates/bulkshoulders.org]")
+            ("r" "running" entry (file+datetree beast-org-file) "* Running :running: \n SCHEDULED: %t\n %^{Time}p")))
 
 # Programming<a id="sec-2" name="sec-2"></a>
 
@@ -136,7 +138,13 @@ This graph captures a set
 
 I also go running once in a while. Graph the results:
 
-![img](img/rungraph-r.png)
+    library(zoo)
+    library(ggplot2)
+    setClass("myTime")
+    setAs("character","myTime", function(from) as.POSIXct(from, format="%M:%S"))
+    Time <- read.zoo(table, colClasses = c("Date", "myTime"))
+    q <- autoplot.zoo(Time) + ylab("Time") + xlab("Date") + geom_point() + geom_line()
+    q
 
 # 2014<a id="sec-3" name="sec-3"></a>
 
